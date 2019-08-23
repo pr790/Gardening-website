@@ -1,0 +1,1 @@
+This is a basic site for gardening and to finish up my web development class!
