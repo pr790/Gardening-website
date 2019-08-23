@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Project V3
+
+   Author: Paul Roberts
+   Date: 8/22/2019  
+   
+   Filename: styles.css
+
+*/
+
+
+html {
+	background-color: hsl(120, 30%, 65%); 
+	height: 100%
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	max-width: 960px;
+	min-width: 640px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+header, ul, nav, li, a { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(110, 31%, 84%);  
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: medium;
+	display: block;
+}
+
+body header { /* M4LO5 "Demonstrate the use of text shadowing" Text shadowing adds shadowing to text, in this case the header elements */
+	text-shadow: rgb(160, 220, 170) 2px 2px 1px,
+				 rgba(17, 17, 17, 0.55) 6px 6px 25px;
+}
+
+article {   /* M4LO4 "Demonstrate the use of gradients" built on, https://uigradients.com/#Dull  */
+	background: #C9D6FF;  
+	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
+	background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+}
+
+aside {
+	background-color: white;
+	float: right;
+	margin-right: 5%;
+	padding: 20px;
+	width: 20%;	 
+}
+
+aside {
+	border-radius: 50px; /* M4LO3 "Demonstrate the use of rounded corners for borders" */
+}
+
+header > image { 
+	display: block;
+	width: 100%;
+	float: left; 
+}
+	
+header > h1 { 
+	text-align: center;
+	color: green; 
+	background-color: rgb(91, 91, 91);
+	font-size: 1em;
+}
+
+nav {
+ background-color: #f2fbe2;
+}
+
+nav.horizontal > ul > li {
+	display: block;
+	width: 25%;
+	text-align: center;
+}
+
+nav > ul {
+	display: table-row;
+}
+
+figure#figure1 { /* M4LO8 "Demonstrate the use of transformations for 2D or 3D images" Flips the image 90 degrees CW and decreases image to 70% of size, also moved image up and to the right. The Box shadow adds a shadow around the edge of photo*/
+	transform: rotate(90deg) scale(0.7,0.7) translate(-20px, -60px);
+	box-shadow: rgb(101,101,101) 10px 10px 25px;
+}
+
+figure#figure2 {
+	margin: 20px auto 0px;
+	width:80%;
+	border-style: solid;
+	border-width: 0px;
+	border-image: url(cuce.jpg) 10 stretch;
+	opacity: 0.50; /* M4LO6 "Demonstrate the use of opacity for images" */
+}
+
+figure#figure3 {
+	transform: rotate(90deg) scale(0.7, 0.7);
+}
+figure img {
+	display: block;
+	width: 100%;
+}
+
+
+figure figcaption {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+
+html {
+	background-image: url(tomate.jpg); /* M4LO2 "Demonstrate the use of background images" */
+	background-attachment: fixed;
+}
+
+ul.submenu {
+	display: none;
+} 
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover { /* M5LO4 expands when hovering over menu and collapses  */
+	display: block;
+}
+
+@media only screen and (max-width: 480px) { /* M5LO3 This media querie removes articles in the mobile site and also increases the size of the text in the nav.  */
+	nav.horizontal a {
+		font-size: 1.6em;
+		line-height: 2.3em;
+	}
+	
+	article {
+		display: none;
+	}
+	
+}
+
+body { /* M5LO5  this adds a body flexbox that grew to match the boundaires of the box */
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap; /* M5LO7  sets the flex direction and flex wrap properties, items can wrap to a new line */
+}
+
+header, footer {
+	width: 100%;
+}
+
+aside {
+	-webkit-flex: 1 1 120px;
+	flex: 1 1 120px;
+}
+
+section#topic {
+	display: -webkit-flex-flow;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap; 
+}
+
+section#topic article {
+	-webkit-flex: 1 1 100px;
+	flex: 1 1 100px;
+}
+table {
+	background: linear-gradient(to right, #E2E2E2, #C9D6FF);  /* M6LO7 Adds background, black border, black text in the table, white text for labeling */
+	border: 5px solid black;
+}
+
+table th, td {
+	border: 5px solid black;
+	line-height: 1.4em;
+	padding: 6px;
+}
+
+table th {
+	background: black;
+	color: #E2E2E2;
+	font-weight: normal;
+}
+
+table td {
+	color: black;
+	font-size: 1.1em;
+	vertical-align: text-top;
+}
+
+col#col1 {
+	width: 17%;
+}
+
+col.dcols {
+	width: 10%;
+}
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 10px;
+   width: 150px;
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   width: 150px;
+}
+
+input:focus, select:focus, textarea:focus 
+
+#nBox:focus:valid, 
+#nBox:focus:valid, 
+#eBox:focus:valid, 
+#pBox:focus:valid, 
+
+#nBox:focus:invalid, 
+#lBox:focus:invalid,  
+#eBox:focus:invalid, 
+#pBox:focus:invalid
+
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 5px 0px;
+}
+
+div.formRow > * {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+
+form#gs {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+form#gs > fieldset {
+	border-radius: 5px;
+	-webkit-flex: 1 1 250px;
+	flex: 1 1 250px;
+	font-size: 0.6em;
+	padding: 5px;
+	margin: 5px;
+}
+
+audio { /*M8LO12*/
+	display: block;
+	margin: 5px auto;
+	width: 80%;
+}
+
+

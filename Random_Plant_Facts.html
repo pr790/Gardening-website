@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"> 
+  <!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+	
+   Project V3
+   Author: Paul Roberts
+   Date: 8/22/2019
+   
+   Filename: Random_Plant_Facts.html
+   -->
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="device-width, initial-scale=1" />
+		<title>Gardening</title>
+		<link href="styles.css" rel="stylesheet" /> 
+		
+	</head>
+	<body>
+		<header>
+		<h1>Gardening Random Plant Facts Page</h1>
+		<img src="lettuce1.jpg" alt="Lettuce" />
+		<nav class="horizontal">
+			<ul class="mainmenu">				
+				<li><a href="#" class="submenuTitle">Menu &#9654;</a>
+					<ul class="submenu">
+						<li><a href="index.html">Home</a></li> 
+						<li><a href="about.html">About</a></li>
+						<li><a href="Random_Plant_Facts.html">Random Plant Facts</a></li>
+						<li><a href="Mailing_List.html">Mailing List</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+			
+				<header>
+					<figure id="figure2"> <!--M4LO1 "Demonstrate the use of figure boxes" -->
+						<img src="cuce.jpg" alt="cucumber" usemap="#cucumber_map" />
+						<figcaption> A cucumber plant and bell pepper plant</figcaption>
+					</figure>
+					<map name="cucumber_map">
+						<area shape="rect" coords="88,110,350,477" href="index.html" alt="Home" /> <!-- M4LO7 "Demonstrate the use of image maps" -->
+					</map>
+				</header>
+			<section id="topic">	
+				<article>
+			<p> This page is for random plant facts! This version will have limited facts but this page will still be populated with
+				a decent amount of content. I will add more at a later date and continue to compile more facts.</p>
+			<aside> This is all a work in progress bear with me!!</aside>				
+
+				</article>
+			
+			<table id="Different_Types_of_Gardening"> <!-- M6LO3 "Demonstrate how to create a table" a quick guide to the different types of gardening, container gardening, raised beds, and in ground.   -->
+			<colgroup>
+				<col id="col1" />
+				<col class="dcols" span="3" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th rowspan="3">Different Styles of Gardening</th> <!-- M6LO4 -->
+					<th>Container Gardening</th>
+					<th>Raised Bed</th>
+					<th>In Ground</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th>Permanent</th>
+					<td></td>
+					<td></td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Moveable</th>
+					<td>X</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Semi-permanent</th>
+					<td></td>
+					<td>X</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Assembly Required</th>
+					<td>X</td>
+					<td>X</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Cheapest</th>
+					<td></td>
+					<td></td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Most Work to get Ready</th>
+					<td></td>
+					<td></td>
+					<td>X</td>
+				</tr>					
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Summary</th>
+					<td>Some assembly required, but moveable.</td>
+					<td>Assembly required, and semi-permanent.</td>
+					<td>Permanent, cheapest to start but also the most work to maintain.</td>
+				</tr>
+			</tfoot>
+			</table>
+		</main>
+		<footer>
+		
+		</footer>
+	</body>
+</html>

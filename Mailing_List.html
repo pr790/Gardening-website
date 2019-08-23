@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"> 
+  <!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+	
+   Project V3
+   Author: Paul Roberts
+   Date: 8/22/2019
+   
+   Filename: Mailing_List.html
+   -->
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="device-width, initial-scale=1" />
+		<title>Mailing List</title>
+		<link href="styles.css" rel="stylesheet" /> 
+		
+	</head>
+	<body>
+		<header>
+		<h1>Mailing List</h1>
+		<figure id="figure3">
+			<img src="jalapeno.jpg" alt="peno" />
+		</figure>
+		<nav class="horizontal">
+			<ul class="mainmenu">				
+				<li><a href="#" class="submenuTitle">Menu &#9654;</a>
+					<ul class="submenu">
+						<li><a href="index.html">Home</a></li> 
+						<li><a href="about.html">About</a></li>
+						<li><a href="Random_Plant_Facts.html">Random Plant Facts</a></li>
+						<li><a href="Mailing_List.html">Mailing List</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<audio controls> <!--M8LO7-->
+			<source src="Indiana_Jones.mp3" type="audio/mp3" />
+			<p><em>To play this audio clip, your browser needs to support HTML5.</em></p>
+		</audio>
+		</header>
+		
+		<iframe width="400" height="250" src="https://www.youtube.com/embed/qdxE33ACT8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--M8LO9-->
+		
+		<section>
+      <h1>Email List Form</h1>
+      <p>Required Item (*)</p>
+	  <form id="gs" action="http://example.com/gardening" method="post">        
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="titleBox" list="titleList"> <!--M7LO5-->
+            <datalist id="titleList">
+				<option value="Mr."></option>
+				<option value="Ms."></option>
+				<option value="Mrs."></option>
+			</datalist>
+            </div>
+
+            <label for="nBox">First Name*</label>
+            <input type="text" name="firstName" id="nBox" required>
+
+            <label for="lBox">Last Name*</label>
+            <input type="text" name="lastName" id="lBox" required>
+
+            <label for="eBox">E-mail*</label>
+            <input type="email" name="email" id="eBox" required>
+
+            <label for="pBox">Phone Number*</label>
+            <input type="tel" name="phoneNumber" id="pBox" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(iii) iii-iiii">
+
+            <label for="regList">E-mail frequency</label> <!--M7LO8-->
+            <select id="rList" name="rList">
+			<option value="ne">Never ending E-mails</option>
+			<option value="os">Only Sometimes</option>
+			<option value="n">NEVER!!!</option>
+			</select>
+			<div class="formRow">
+				<label>Are you interested in gardening?</label> <!--M7LO7-->
+				<fieldset class="optGroup">
+					<label for="gYes">Yes</label>
+					<input name="gopt" id="gYes" value="yes" type="radio" />
+					<label for="gNo">No</label>
+					<input name="gopt" id="gNo" value="no" type="radio" />
+					<label for="agree1">Check to agree to mail list.</label> <!--M7LO6-->
+					<input name="agree" id="agree1" value="yes" type="checkbox" />
+				</fieldset>	
+			</div>		
+			<label for="commBox">Tell me more about your gardening interests!</label> <!--M7LO9-->
+			<textarea name="gInterest" id="commBox"></textarea>
+
+            <p><input type="submit" name="submit" value="Submit"></p> <!--M7LO10-->
+
+        </form>
+      
+   </section>
+		<footer>
+		
+		</footer>
+	</body>
+</html>
